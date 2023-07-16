@@ -1,10 +1,10 @@
 package com.bookstore.business.abstracts;
 
-import com.bookstore.entities.concretes.Brand;
+import com.bookstore.business.respones.GetAllBrandResponse;
 
 import java.util.List;
 
 public interface BrandService {
 
-    List<Brand> getAll();
+    List<GetAllBrandResponse> getAll();
 }

@@ -2,6 +2,7 @@ package com.bookstore.webApi.Controllers;
 
 
 import com.bookstore.business.abstracts.BrandService;
+import com.bookstore.business.respones.GetAllBrandResponse;
 import com.bookstore.entities.concretes.Brand;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,7 +21,7 @@ public class BrandsController {
         this.brandService = brandService;
     }
     @GetMapping("/getAll")
-    public List<Brand> getAll(){
+    public List<GetAllBrandResponse> getAll(){
     return brandService.getAll();
     }
 }
